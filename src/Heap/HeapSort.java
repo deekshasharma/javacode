@@ -13,6 +13,9 @@ public class HeapSort {
         heapSort.runHeapSort(arrayOfNumbers);
     }
 
+    /*
+    Implementation of Heap Sort
+     */
     protected void runHeapSort(int[] unsortedArray)
     {
         int[] heap = constructHeap(unsortedArray);
@@ -46,8 +49,8 @@ public class HeapSort {
     This method maintains the Max Heap property on a given node.
      */
     protected int[] runHeapify(int[] arrayOfIntegers, int index, int heapSize) {
-        int leftChildIndex = (2 * index);         // off by one to support 0 indexing
-        int rightChildIndex = (2 * index + 1);    // // off by one to support 0 indexing
+        int leftChildIndex = (2 * index);
+        int rightChildIndex = (2 * index + 1);
         int indexOfLargest;
         if (leftChildIndex <= heapSize && arrayOfIntegers[leftChildIndex] > arrayOfIntegers[index]) {
             indexOfLargest = leftChildIndex;
