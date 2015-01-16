@@ -54,4 +54,9 @@ public class SinglyLinkedList {
             currentNode = currentNode.getNextNode();
         }
     }
+
+    protected Node getHead()
+    {
+        return this.head;
+    }
 }

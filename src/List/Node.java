@@ -14,10 +14,15 @@ public class Node {
     {
         return value;
     }
+    protected void setValue(int value)
+    {
+        this.value = value;
+    }
     protected void setNextNode(Node next)
     {
         this.nextNode = next;
     }
+
 
     protected Node getNextNode()
     {
